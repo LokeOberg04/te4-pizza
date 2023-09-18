@@ -18,5 +18,7 @@ Backend: Loke
 
 Frontend: Alexander + Angelica
 
+https://www.figma.com/file/QVUdsPtOUlHhNK4UXzfed3/Pizza?type=design&node-id=0%3A1&mode=design&t=FpF4c9SVq9mPrCpJ-1
+
 ## Dokumentation
 
