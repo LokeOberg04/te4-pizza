@@ -15,12 +15,14 @@ html {
     right: 100px;
     color: white;
     text-decoration: none;
+    font-size: xx-large;
 }
 
 .menu {
     color: white;
     position: fixed;
     top: 50px;
-    right: 200px;
+    right: 300px;
     text-decoration: none;
+    font-size: xx-large;
 }
