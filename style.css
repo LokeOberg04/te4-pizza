@@ -2,14 +2,25 @@ html {
     scroll-behavior: smooth;
 }
 
+.background {
+    background-image: url('pissa.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .contact {
     position: fixed;
     top: 50px;
     right: 100px;
+    color: white;
+    text-decoration: none;
 }
 
 .menu {
+    color: white;
     position: fixed;
     top: 50px;
     right: 200px;
+    text-decoration: none;
 }
