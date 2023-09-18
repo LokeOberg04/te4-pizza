@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.contact {
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+.menu {
+    position: fixed;
+    top: 50px;
+    right: 200px;
+}
