@@ -8,6 +8,15 @@
 
 ## Planering
 
+Målgrupp: Studenter
+
+Namn: Delicious Pizza
+
+Slogan: Delicious and suspicious
+
+Backend: Loke
+
+Frontend: Alexander + Angelica
 
 ## Dokumentation
 
