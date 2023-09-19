@@ -11,13 +11,15 @@ function showMenu(id) {
 
         let pizzaItem = document.createElement("li")
         let pizzaName = document.createElement("h5")
+        let div = document.createElement("div")
         let pizzaText = document.createElement("p")
         let pizzaPrice = document.createElement("p")
 
-        pizzaName.innerHTML = pizza.name + "<br><hr>"
-        pizzaText.innerHTML = pizza.ingredients
+        pizzaName.innerHTML = pizza.name
         pizzaPrice.innerHTML = pizza.price
+        pizzaText.innerHTML = pizza.ingredients + "<br><hr>"
 
+        div.classList.add("menuDiv")
         pizzaItem.classList.add("menuItem")
         pizzaName.classList.add("menuItemName")
         pizzaText.classList.add("menuItemText")
@@ -30,12 +32,13 @@ function showMenu(id) {
         console.log("Pizza Price: " + pizza.price)
 
         console.log("...")
-        pizzaItem.appendChild(pizzaName)
+        div.appendChild(pizzaName)
+        div.appendChild(pizzaPrice)
+        pizzaItem.appendChild(div)
         pizzaItem.appendChild(pizzaText)
-        pizzaItem.appendChild(pizzaPrice)
         pizzaList.appendChild(pizzaItem)
     })
 
 }
 
-showMenu(0);
+showMenu(2);

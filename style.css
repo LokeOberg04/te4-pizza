@@ -102,7 +102,7 @@ hr {}
 }
 
 .menuButton {
-    width: var(--space-3xl);
+    width: 15%;
     /*lite skumt men fixar in post, kanske gör den statisk? samma med font-size*/
     height: 2.5rem;
     margin-right: 1rem;
@@ -118,3 +118,18 @@ hr {}
     color: var(--color-primary1);
     background-color: var(--color-secondary);
 }
+
+.menuButton:focus {
+    color: var(--color-primary1);
+    background-color: var(--color-secondary);
+}
+
+.menuItem {}
+
+.menuDiv {}
+
+.menuItemName {}
+
+.menuItemPrice {}
+
+.menuItemText {}
