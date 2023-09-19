@@ -17,6 +17,11 @@ export default [
                 "name": "Kebabpizza",
                 "ingredients": "Tomatsås, ost, kebab, kebabsås",
                 "price": "110 kr"
+            },
+            {
+                "name": "Räkpizza",
+                "ingredients": "Tomatsås, ost",
+                "price": "110 kr"
             }
         ]
     },
@@ -52,18 +57,28 @@ export default [
             },
             {
                 "name": "Ejdens special",
-                "ingredients": "Tomat, ost, banan, gurka, aubergine, choklad, bönor, ajvarsås, chili",
+                "ingredients": "Tomatsås, ost, banan, gurka, aubergine, choklad, bönor, ajvarsås, chili",
                 "price": "150 kr"
             },
             {
                 "name": "Sarahs special",
-                "ingredients": 'Tomat, ost, oxfile, "kebabsås"',
+                "ingredients": 'Tomatsås, ost, oxfile, "kebabsås"',
                 "price": "110 kr"
             },
             {
                 "name": "Tims special",
                 "ingredients": 'ost, bottom ris, maxa dressing',
+                "price": "100 kr"
+            },
+            {
+                "name": "Olarrys special",
+                "ingredients": 'tomatsås, ost, råtta',
                 "price": "130 kr"
+            },
+            {
+                "name": "Margheritas special",
+                "ingredients": 'tomatsås, ost, tomat',
+                "price": "120 kr"
             }
         ]
     }
