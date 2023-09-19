@@ -48,6 +48,27 @@ export default [
     },
     {
         "id": 3,
+        "type": "Inbakade pizzor",
+        "pizzor": [
+            {
+                "name": "Calzone",
+                "ingredients": "Tomatsås, ost, skinka",
+                "price": "115 kr"
+            },
+            {
+                "name": "Calzone special",
+                "ingredients": "Tomatsås, ost, skinka, räkor, champinjoner",
+                "price": "120 kr"
+            },
+            {
+                "name": "Colosseo",
+                "ingredients": "Tomatsås, ost, skinka, räkor, tomat, bearnaisesås",
+                "price": "120 kr"
+            }
+        ]
+    },
+    {
+        "id": 4,
         "type": "Specialla Pizzor",
         "pizzor": [
             {

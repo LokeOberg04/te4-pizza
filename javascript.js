@@ -47,5 +47,6 @@ function showMenu(id) {
 document.getElementById("pizza").onclick = function () { showMenu(0); };
 document.getElementById("vegetarian").onclick = function () { showMenu(1); };
 document.getElementById("baked").onclick = function () { showMenu(2); };
+document.getElementById("special").onclick = function () { showMenu(3); };
 
 showMenu(0);
