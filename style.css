@@ -72,11 +72,10 @@ nav {
 }
 
 .icon {
-    width: 200px;
-    height: 200px;
+    width: 4rem;
+    height: 3rem;
     position: fixed;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 1rem;
 }
 
 .title1 {
@@ -219,12 +218,17 @@ hr {}
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding-bottom: 4rem;
 }
 
 iframe {
     width: 25vw;
     height: 40vh;
     position: relative;
+}
+
+:target {
+    scroll-margin-top: 3ex;
 }
 
 .contactItems {
