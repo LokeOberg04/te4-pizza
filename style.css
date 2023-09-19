@@ -63,7 +63,7 @@ nav {
 }
 
 .background {
-    background-image: linear-gradient(rgba(22, 21, 21, 0.5), rgba(87, 86, 86, 0.5)), url("images/pissa.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("images/pissa.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
