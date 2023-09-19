@@ -4,6 +4,22 @@ fetch('/menu.json')
     .then((menu) => {
         console.log("js loaded...")
 
+        let menuButtons = document.getElementById("menuButtons")
+        let pizzaButton = document.createElement("button")
+        pizzaButton.classList.add("menuButton", "menuButtonFocus")
+        pizzaButton.innerHTML = "Ordinarie"
+        let vegetarianButton = document.createElement("button")
+        vegetarianButton.classList.add("menuButton")
+        vegetarianButton.innerHTML = "Vegetarian"
+        let bakedButton = document.createElement("button")
+        bakedButton.classList.add("menuButton")
+        bakedButton.innerHTML = "Inbakad"
+        let specialButton = document.createElement("button")
+        specialButton.classList.add("menuButton")
+        specialButton.innerHTML = "Specialare"
+
+        menuButtons.append(pizzaButton, vegetarianButton, bakedButton, specialButton)
+
         let pizzaList = document.getElementById("pizzaList")
         function showMenu(id) {
 
@@ -39,19 +55,19 @@ fetch('/menu.json')
         }
 
         function toggleFocus(id) {
-            document.getElementById("pizza").classList.remove("menuButtonFocus")
-            document.getElementById("vegetarian").classList.remove("menuButtonFocus")
-            document.getElementById("baked").classList.remove("menuButtonFocus")
-            document.getElementById("special").classList.remove("menuButtonFocus")
-            document.getElementById(id).classList.add("menuButtonFocus")
+            pizzaButton.classList.remove("menuButtonFocus")
+            vegetarianButton.classList.remove("menuButtonFocus")
+            bakedButton.classList.remove("menuButtonFocus")
+            specialButton.classList.remove("menuButtonFocus")
+            id.classList.add("menuButtonFocus")
         }
 
         showMenu(0);
 
-        document.getElementById("pizza").onclick = function () { showMenu(0); toggleFocus("pizza") };
-        document.getElementById("vegetarian").onclick = function () { showMenu(1); toggleFocus("vegetarian") };
-        document.getElementById("baked").onclick = function () { showMenu(2); toggleFocus("baked") };
-        document.getElementById("special").onclick = function () { showMenu(3); toggleFocus("special") };
+        pizzaButton.onclick = function () { showMenu(0); toggleFocus(pizzaButton) };
+        vegetarianButton.onclick = function () { showMenu(1); toggleFocus(vegetarianButton) };
+        bakedButton.onclick = function () { showMenu(2); toggleFocus(bakedButton) };
+        specialButton.onclick = function () { showMenu(3); toggleFocus(specialButton) };
 
         document.getElementById("prev").onclick = function () { plusSlides(-1); };
         document.getElementById("next").onclick = function () { plusSlides(1); };
