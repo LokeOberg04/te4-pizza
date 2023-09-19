@@ -147,6 +147,11 @@ export default [
                 "price": "2000 kr"
             },
             {
+                "name": "Kockens special",
+                "ingredients": "Senap",
+                "price": "20 kr"
+            },
+            {
                 "name": "Ejdens special",
                 "ingredients": "Tomatsås, ost, banan, gurka, aubergine, choklad, bönor, ajvarsås, chili",
                 "price": "150 kr"
@@ -169,6 +174,11 @@ export default [
             {
                 "name": "Margheritas special",
                 "ingredients": 'Tomatsås, ost, tomatsås, tomat',
+                "price": "120 kr"
+            },
+            {
+                "name": "Chazmon special",
+                "ingredients": 'Tunt bröd, gris blod, asbest, myggor',
                 "price": "120 kr"
             }
         ]

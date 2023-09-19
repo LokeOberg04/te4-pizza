@@ -2,14 +2,13 @@ import menu from './menu.js'
 
 console.log("js loaded...")
 
-console.log(menu)
 let pizzaList = document.getElementById("pizzaList")
 function showMenu(id) {
 
     while (pizzaList.firstChild) {
         pizzaList.removeChild(pizzaList.lastChild);
     }
-    console.log(menu[id].type)
+
     menu[id].pizzor.forEach((pizza) => {
 
         let pizzaItem = document.createElement("li")
@@ -28,13 +27,6 @@ function showMenu(id) {
         pizzaText.classList.add("menuItemText")
         pizzaPrice.classList.add("menuItemPrice")
 
-        console.log("Pizza Name: " + pizza.name)
-
-        console.log("Pizza Ingredients: " + pizza.ingredients)
-
-        console.log("Pizza Price: " + pizza.price)
-
-        console.log("...")
         div.appendChild(pizzaName)
         div.appendChild(pizzaPrice)
         pizzaItem.appendChild(div)
@@ -50,3 +42,38 @@ document.getElementById("pizza").onclick = function () { showMenu(0); };
 document.getElementById("vegetarian").onclick = function () { showMenu(1); };
 document.getElementById("baked").onclick = function () { showMenu(2); };
 document.getElementById("special").onclick = function () { showMenu(3); };
+
+document.getElementById("prev").onclick = function () { plusSlides(-1); };
+document.getElementById("next").onclick = function () { plusSlides(1); };
+document.getElementById("dot1").onclick = function () { currentSlide(1); };
+document.getElementById("dot2").onclick = function () { currentSlide(2); };
+document.getElementById("dot3").onclick = function () { currentSlide(3); };
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+} 
