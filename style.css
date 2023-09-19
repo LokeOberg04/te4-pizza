@@ -191,6 +191,7 @@ hr {}
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 3rem;
     font-size: var(--space-m);
     font-weight: 300;
 }
@@ -199,26 +200,32 @@ hr {}
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
 }
 
 iframe {
-    width: 50%;
+    width: 25vw;
+    height: 40vh;
+    position: relative;
 }
 
 .contactItems {
     width: 50%;
     height: 50%;
+    margin-left: 1rem;
 }
 
 .contactTitle {
     font-size: var(--space-m);
     font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 .contactText {
     font-size: var(--space-m);
     font-weight: 300;
+    margin: 0.2rem;
 }
 
 * {
@@ -230,6 +237,7 @@ iframe {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    padding-top: 3rem;
 }
 
 /* Hide the images by default */
