@@ -17,6 +17,11 @@ export default [
                 "name": "Kebabpizza",
                 "ingredients": "Tomatsås, ost, kebab, kebabsås",
                 "price": "110 kr"
+            },
+            {
+                "name": "Räkpizza",
+                "ingredients": "Tomatsås, ost",
+                "price": "110 kr"
             }
         ]
     },
@@ -43,6 +48,27 @@ export default [
     },
     {
         "id": 3,
+        "type": "Inbakade pizzor",
+        "pizzor": [
+            {
+                "name": "Calzone",
+                "ingredients": "Tomatsås, ost, skinka",
+                "price": "115 kr"
+            },
+            {
+                "name": "Calzone special",
+                "ingredients": "Tomatsås, ost, skinka, räkor, champinjoner",
+                "price": "120 kr"
+            },
+            {
+                "name": "Colosseo",
+                "ingredients": "Tomatsås, ost, skinka, räkor, tomat, bearnaisesås",
+                "price": "120 kr"
+            }
+        ]
+    },
+    {
+        "id": 4,
         "type": "Specialla Pizzor",
         "pizzor": [
             {
@@ -52,18 +78,28 @@ export default [
             },
             {
                 "name": "Ejdens special",
-                "ingredients": "Tomat, ost, banan, gurka, aubergine, choklad, bönor, ajvarsås, chili",
+                "ingredients": "Tomatsås, ost, banan, gurka, aubergine, choklad, bönor, ajvarsås, chili",
                 "price": "150 kr"
             },
             {
                 "name": "Sarahs special",
-                "ingredients": 'Tomat, ost, oxfile, "kebabsås"',
+                "ingredients": 'Tomatsås, ost, oxfile, "kebabsås"',
                 "price": "110 kr"
             },
             {
                 "name": "Tims special",
                 "ingredients": 'ost, bottom ris, maxa dressing',
+                "price": "100 kr"
+            },
+            {
+                "name": "Olarrys special",
+                "ingredients": 'tomatsås, ost, råtta',
                 "price": "130 kr"
+            },
+            {
+                "name": "Margheritas special",
+                "ingredients": 'tomatsås, ost, tomat',
+                "price": "120 kr"
             }
         ]
     }
