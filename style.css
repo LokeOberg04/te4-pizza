@@ -56,6 +56,7 @@ body {
 }
 
 nav {
+    z-index: 1;
     position: fixed;
     height: 3rem;
     width: 100%;
