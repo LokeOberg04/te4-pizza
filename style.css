@@ -108,8 +108,9 @@ body {
 
 .h1 {
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 3rem;
+    margin-top: 3rem;
 }
 
 .h2 {}
@@ -120,6 +121,7 @@ hr {}
 
 .menuContainer {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .menuButton {
@@ -127,6 +129,7 @@ hr {}
     height: 2.5rem;
     margin-right: 1rem;
     font-size: var(--space-s);
+    font-weight: 400;
     color: var(--color-secondary);
     background-color: var(--color-primary1);
     border-color: var(--color-border);
@@ -172,13 +175,15 @@ hr {}
 
 .menuItemText {
     font-size: var(--space-s);
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .aboutUsContainer {
     background-color: var(--color-primary2);
     width: 100%;
     height: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .aboutUsContainer p {
@@ -187,6 +192,11 @@ hr {}
     margin-left: auto;
     margin-right: auto;
     font-size: var(--space-m);
+    font-weight: 300;
+}
+
+.contactContainer {
+    display: flex;
 }
 
 * {
