@@ -1,4 +1,4 @@
-[
+export default [
     {
         "id": 1,
         "type": "Ordinarie Pizzor",
