@@ -4,6 +4,9 @@ fetch('/menu.json')
     .then((menu) => {
         console.log("js loaded...")
 
+        document.getElementById("prev").hidden = false;
+        document.getElementById("next").hidden = false;
+
         let menuButtons = document.getElementById("menuButtons")
         let pizzaButton = document.createElement("button")
         pizzaButton.classList.add("menuButton", "menuButtonFocus")
