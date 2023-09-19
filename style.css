@@ -43,16 +43,26 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    height: 100%;
 }
 
 body {
     font-family: 'League Spartan', sans-serif;
     background-color: var(--color-primary1);
     color: var(--color-secondary);
+    margin: 0;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    height: 3rem;
+    width: 100%;
+    background-color: var(--color-primary2);
 }
 
 .background {
-
     background-image: linear-gradient(rgba(22, 21, 21, 0.5), rgba(87, 86, 86, 0.5)), url("images/pissa.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -89,8 +99,8 @@ body {
 
 .contact {
     position: fixed;
-    top: 50px;
-    right: 100px;
+    top: 1%;
+    right: 1rem;
     color: white;
     text-decoration: none;
     font-size: xx-large;
@@ -99,8 +109,8 @@ body {
 .menu {
     color: white;
     position: fixed;
-    top: 50px;
-    right: 300px;
+    top: 1%;
+    right: 10rem;
     text-decoration: none;
     font-size: xx-large;
 
@@ -189,7 +199,7 @@ hr {}
 
 .aboutUsContainer p {
     text-align: center;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 3rem;
