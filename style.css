@@ -154,6 +154,14 @@ hr {}
     transition: 0.3s;
 }
 
+@media screen and (max-width:726px) {
+
+    .menuButton {
+        margin-top: 1rem;
+        width: 70vw;
+    }
+}
+
 .menuButton:hover {
     color: var(--color-primary1);
     background-color: var(--color-secondary);
