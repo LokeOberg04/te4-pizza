@@ -197,4 +197,26 @@ hr {}
 
 .contactContainer {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+iframe {
+    width: 50%;
+}
+
+.contactItems {
+    width: 50%;
+    height: 50%;
+}
+
+.contactTitle {
+    font-size: var(--space-m);
+    font-weight: 500;
+}
+
+.contactText {
+    font-size: var(--space-m);
+    font-weight: 300;
 }
