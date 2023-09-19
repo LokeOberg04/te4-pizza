@@ -38,12 +38,20 @@ fetch('/menu.json')
 
         }
 
+        function toggleFocus(id) {
+            document.getElementById("pizza").classList.remove("menuButtonFocus")
+            document.getElementById("vegetarian").classList.remove("menuButtonFocus")
+            document.getElementById("baked").classList.remove("menuButtonFocus")
+            document.getElementById("special").classList.remove("menuButtonFocus")
+            document.getElementById(id).classList.add("menuButtonFocus")
+        }
+
         showMenu(0);
 
-        document.getElementById("pizza").onclick = function () { showMenu(0); };
-        document.getElementById("vegetarian").onclick = function () { showMenu(1); };
-        document.getElementById("baked").onclick = function () { showMenu(2); };
-        document.getElementById("special").onclick = function () { showMenu(3); };
+        document.getElementById("pizza").onclick = function () { showMenu(0); toggleFocus("pizza") };
+        document.getElementById("vegetarian").onclick = function () { showMenu(1); toggleFocus("vegetarian") };
+        document.getElementById("baked").onclick = function () { showMenu(2); toggleFocus("baked") };
+        document.getElementById("special").onclick = function () { showMenu(3); toggleFocus("special") };
 
         document.getElementById("prev").onclick = function () { plusSlides(-1); };
         document.getElementById("next").onclick = function () { plusSlides(1); };
