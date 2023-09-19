@@ -47,6 +47,8 @@ html {
 
 body {
     font-family: 'League Spartan', sans-serif;
+    font-family: 'Nabla', cursive;
+    font-family: 'Reem Kufi Fun', sans-serif;
     background-color: var(--color-primary1);
     color: var(--color-secondary);
 }
@@ -83,7 +85,7 @@ body {
 
 .h1 {
     text-align: center;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3rem;
 }
 
@@ -93,17 +95,12 @@ body {
 
 hr {}
 
-.menuUl {
-    list-style: none;
-}
-
 .menuContainer {
     text-align: center;
 }
 
 .menuButton {
     width: 15%;
-    /*lite skumt men fixar in post, kanske gör den statisk? samma med font-size*/
     height: 2.5rem;
     margin-right: 1rem;
     font-size: var(--space-s);
@@ -124,12 +121,33 @@ hr {}
     background-color: var(--color-secondary);
 }
 
-.menuItem {}
+.menuItem {
+    list-style: none;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 0;
+}
 
-.menuDiv {}
+.menuDiv {
+    display: flex;
+}
 
-.menuItemName {}
+.menuItemName {
+    font-size: var(--space-m);
+    font-weight: 500;
+    margin: 0;
+}
 
-.menuItemPrice {}
+.menuItemPrice {
+    font-size: var(--space-m);
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
-.menuItemText {}
+.menuItemText {
+    font-size: var(--space-s);
+    font-weight: 100;
+}
