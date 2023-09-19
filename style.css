@@ -47,8 +47,6 @@ html {
 
 body {
     font-family: 'League Spartan', sans-serif;
-    font-family: 'Nabla', cursive;
-    font-family: 'Reem Kufi Fun', sans-serif;
     background-color: var(--color-primary1);
     color: var(--color-secondary);
 }
@@ -59,8 +57,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 1900px;
-    height: 1000px;
+    width: 100%;
+    height: 100vh;
 }
 
 .contact {
@@ -150,4 +148,18 @@ hr {}
 .menuItemText {
     font-size: var(--space-s);
     font-weight: 100;
+}
+
+.aboutUsContainer {
+    background-color: var(--color-primary2);
+    width: 100%;
+    height: fit-content;
+}
+
+.aboutUsContainer p {
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--space-m);
 }
