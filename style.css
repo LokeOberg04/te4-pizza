@@ -223,27 +223,28 @@ hr {}
 }
 
 .contactContainer {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     padding-bottom: 4rem;
 }
 
 iframe {
-    width: 25vw;
-    height: 40vh;
-    position: relative;
+    width: 80vw;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-:target {
-    scroll-margin-top: 3ex;
-}
 
 .contactItems {
-    width: 50%;
-    height: 50%;
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.individualContactItems {
+    margin-right: 3rem;
 }
 
 .contactTitle {
@@ -254,9 +255,13 @@ iframe {
 }
 
 .contactText {
-    font-size: var(--space-m);
+    font-size: var(--space-s);
     font-weight: 300;
     margin: 0.2rem;
+}
+
+:target {
+    scroll-margin-top: 3ex;
 }
 
 * {
