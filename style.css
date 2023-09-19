@@ -43,17 +43,27 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    height: 100%;
 }
 
 body {
     font-family: 'League Spartan', sans-serif;
     background-color: var(--color-primary1);
     color: var(--color-secondary);
+    margin: 0;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    height: 3rem;
+    width: 100%;
+    background-color: var(--color-primary2);
 }
 
 .background {
-
-    background-image: linear-gradient(rgba(22, 21, 21, 0.5), rgba(87, 86, 86, 0.5)), url("pissa.jpg");
+    background-image: linear-gradient(rgba(22, 21, 21, 0.5), rgba(87, 86, 86, 0.5)), url("images/pissa.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -96,8 +106,8 @@ body {
 
 .contact {
     position: fixed;
-    top: 50px;
-    right: 70px;
+    top: 1%;
+    right: 1rem;
     color: white;
     text-decoration: none;
     font-size: xx-large;
@@ -106,8 +116,8 @@ body {
 .menu {
     color: white;
     position: fixed;
-    top: 50px;
-    right: 200px;
+    top: 1%;
+    right: 10rem;
     text-decoration: none;
     font-size: xx-large;
 
@@ -150,7 +160,7 @@ hr {}
     background-color: var(--color-secondary);
 }
 
-.menuButton:focus {
+.menuButtonFocus {
     color: var(--color-primary1);
     background-color: var(--color-secondary);
 }
@@ -196,9 +206,10 @@ hr {}
 
 .aboutUsContainer p {
     text-align: center;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 3rem;
     font-size: var(--space-m);
     font-weight: 300;
 }
@@ -207,26 +218,32 @@ hr {}
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
 }
 
 iframe {
-    width: 50%;
+    width: 25vw;
+    height: 40vh;
+    position: relative;
 }
 
 .contactItems {
     width: 50%;
     height: 50%;
+    margin-left: 1rem;
 }
 
 .contactTitle {
     font-size: var(--space-m);
     font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 .contactText {
     font-size: var(--space-m);
     font-weight: 300;
+    margin: 0.2rem;
 }
 
 * {
@@ -236,8 +253,10 @@ iframe {
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    max-height: 665px;
     position: relative;
     margin: auto;
+    padding-top: 3rem;
 }
 
 /* Hide the images by default */

@@ -1,79 +1,106 @@
-import menu from './menu.js'
 
-console.log("js loaded...")
+fetch('/menu.json')
+    .then((response) => response.json())
+    .then((menu) => {
+        console.log("js loaded...")
 
-let pizzaList = document.getElementById("pizzaList")
-function showMenu(id) {
+        let menuButtons = document.getElementById("menuButtons")
+        let pizzaButton = document.createElement("button")
+        pizzaButton.classList.add("menuButton", "menuButtonFocus")
+        pizzaButton.innerHTML = "Ordinarie"
+        let vegetarianButton = document.createElement("button")
+        vegetarianButton.classList.add("menuButton")
+        vegetarianButton.innerHTML = "Vegetarian"
+        let bakedButton = document.createElement("button")
+        bakedButton.classList.add("menuButton")
+        bakedButton.innerHTML = "Inbakad"
+        let specialButton = document.createElement("button")
+        specialButton.classList.add("menuButton")
+        specialButton.innerHTML = "Specialare"
 
-    while (pizzaList.firstChild) {
-        pizzaList.removeChild(pizzaList.lastChild);
-    }
+        menuButtons.append(pizzaButton, vegetarianButton, bakedButton, specialButton)
 
-    menu[id].pizzor.forEach((pizza) => {
+        let pizzaList = document.getElementById("pizzaList")
+        function showMenu(id) {
 
-        let pizzaItem = document.createElement("li")
-        let pizzaName = document.createElement("h5")
-        let div = document.createElement("div")
-        let pizzaText = document.createElement("p")
-        let pizzaPrice = document.createElement("p")
+            while (pizzaList.firstChild) {
+                pizzaList.removeChild(pizzaList.lastChild);
+            }
 
-        pizzaName.innerHTML = pizza.name
-        pizzaPrice.innerHTML = pizza.price
-        pizzaText.innerHTML = pizza.ingredients + "<br><hr>"
+            menu[id].pizzor.forEach((pizza) => {
 
-        div.classList.add("menuDiv")
-        pizzaItem.classList.add("menuItem")
-        pizzaName.classList.add("menuItemName")
-        pizzaText.classList.add("menuItemText")
-        pizzaPrice.classList.add("menuItemPrice")
+                let pizzaItem = document.createElement("li")
+                let pizzaName = document.createElement("h5")
+                let div = document.createElement("div")
+                let pizzaText = document.createElement("p")
+                let pizzaPrice = document.createElement("p")
 
-        div.appendChild(pizzaName)
-        div.appendChild(pizzaPrice)
-        pizzaItem.appendChild(div)
-        pizzaItem.appendChild(pizzaText)
-        pizzaList.appendChild(pizzaItem)
-    })
+                pizzaName.innerHTML = pizza.name
+                pizzaPrice.innerHTML = pizza.price
+                pizzaText.innerHTML = pizza.ingredients + "<br><hr>"
 
-}
+                div.classList.add("menuDiv")
+                pizzaItem.classList.add("menuItem")
+                pizzaName.classList.add("menuItemName")
+                pizzaText.classList.add("menuItemText")
+                pizzaPrice.classList.add("menuItemPrice")
 
-showMenu(0);
+                div.appendChild(pizzaName)
+                div.appendChild(pizzaPrice)
+                pizzaItem.appendChild(div)
+                pizzaItem.appendChild(pizzaText)
+                pizzaList.appendChild(pizzaItem)
+            })
 
-document.getElementById("pizza").onclick = function () { showMenu(0); };
-document.getElementById("vegetarian").onclick = function () { showMenu(1); };
-document.getElementById("baked").onclick = function () { showMenu(2); };
-document.getElementById("special").onclick = function () { showMenu(3); };
+        }
 
-document.getElementById("prev").onclick = function () { plusSlides(-1); };
-document.getElementById("next").onclick = function () { plusSlides(1); };
-document.getElementById("dot1").onclick = function () { currentSlide(1); };
-document.getElementById("dot2").onclick = function () { currentSlide(2); };
-document.getElementById("dot3").onclick = function () { currentSlide(3); };
+        function toggleFocus(id) {
+            pizzaButton.classList.remove("menuButtonFocus")
+            vegetarianButton.classList.remove("menuButtonFocus")
+            bakedButton.classList.remove("menuButtonFocus")
+            specialButton.classList.remove("menuButtonFocus")
+            id.classList.add("menuButtonFocus")
+        }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+        showMenu(0);
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+        pizzaButton.onclick = function () { showMenu(0); toggleFocus(pizzaButton) };
+        vegetarianButton.onclick = function () { showMenu(1); toggleFocus(vegetarianButton) };
+        bakedButton.onclick = function () { showMenu(2); toggleFocus(bakedButton) };
+        specialButton.onclick = function () { showMenu(3); toggleFocus(specialButton) };
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+        document.getElementById("prev").onclick = function () { plusSlides(-1); };
+        document.getElementById("next").onclick = function () { plusSlides(1); };
+        document.getElementById("dot1").onclick = function () { currentSlide(1); };
+        document.getElementById("dot2").onclick = function () { currentSlide(2); };
+        document.getElementById("dot3").onclick = function () { currentSlide(3); };
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-} 
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    });
