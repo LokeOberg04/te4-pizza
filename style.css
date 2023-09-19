@@ -52,10 +52,13 @@ body {
 }
 
 .background {
+
     background-image: url('pissa.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 1900px;
+    height: 1000px;
 }
 
 .contact {
