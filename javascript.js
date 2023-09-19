@@ -1,5 +1,5 @@
 
-fetch('/menu.json')
+fetch('menu.json')
     .then((response) => response.json())
     .then((menu) => {
         console.log("js loaded...")
