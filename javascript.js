@@ -6,6 +6,9 @@ console.log(menu)
 let pizzaList = document.getElementById("pizzaList")
 function showMenu(id) {
 
+    while (pizzaList.firstChild) {
+        pizzaList.removeChild(pizzaList.lastChild);
+    }
     console.log(menu[id].type)
     menu[id].pizzor.forEach((pizza) => {
 
@@ -41,4 +44,9 @@ function showMenu(id) {
 
 }
 
-showMenu(2);
+document.getElementById("pizza").onclick = function () { showMenu(0); };
+document.getElementById("vegetarian").onclick = function () { showMenu(1); };
+document.getElementById("baked").onclick = function () { showMenu(2); };
+document.getElementById("special").onclick = function () { showMenu(3); };
+
+showMenu(0);

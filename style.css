@@ -55,7 +55,7 @@ body {
 
 .background {
 
-    background-image: url('pissa.jpg');
+    background-image: linear-gradient(rgba(81, 75, 75, 0.5), rgba(87, 86, 86, 0.5)), url("pissa.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -79,6 +79,7 @@ body {
     right: 300px;
     text-decoration: none;
     font-size: xx-large;
+
 }
 
 
