@@ -4,20 +4,22 @@ fetch('menu.json')
 
         console.log("js loaded...")
 
+        document.getElementById("karta").remove();
+
         document.getElementById("prev").hidden = false;
         document.getElementById("next").hidden = false;
 
         let menuButtons = document.getElementById("menuButtons")
-        let pizzaButton = document.createElement("button")
+        let pizzaButton = document.getElementById("ordinarie")
         pizzaButton.classList.add("menuButton", "menuButtonFocus")
         pizzaButton.innerHTML = "Ordinarie"
-        let vegetarianButton = document.createElement("button")
+        let vegetarianButton = document.getElementById("vegetarian")
         vegetarianButton.classList.add("menuButton")
         vegetarianButton.innerHTML = "Vegetarian"
-        let bakedButton = document.createElement("button")
+        let bakedButton = document.getElementById("inbakad")
         bakedButton.classList.add("menuButton")
         bakedButton.innerHTML = "Inbakad"
-        let specialButton = document.createElement("button")
+        let specialButton = document.getElementById("special")
         specialButton.classList.add("menuButton")
         specialButton.innerHTML = "Specialare"
 
