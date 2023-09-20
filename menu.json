@@ -144,7 +144,7 @@
             {
                 "name": "Agels special",
                 "ingredients": "Tomatsås, ost, nutella, ballong, svamp, lök, tonfisk, vitlök, musslor, pommes, nachochips, mozarella, jalapeno, salami, truffle olja, avocado, körv, bacon, biff, kyckling, fetaost, pesto sås, bbq pulled pork, kimchi, egg, crab sticks, stekt sparris",
-                "price": "2000 kr"
+                "price": "59 kr"
             },
             {
                 "name": "Kockens special",
@@ -168,7 +168,7 @@
             },
             {
                 "name": "Olarrys special",
-                "ingredients": "Tomatsås, ost, råtta",
+                "ingredients": "Tomatsås, ost, råtta, grus, smör (mögligt)",
                 "price": "130 kr"
             },
             {
@@ -180,6 +180,16 @@
                 "name": "Chazmon special",
                 "ingredients": "Tunt bröd, gris blod, asbest, myggor",
                 "price": "120 kr"
+            },
+            {
+                "name": "Angelicas special",
+                "ingredients": "Tomatsås, pengar, mynt, mint, slay the spire figurine",
+                "price": "-$500"
+            },
+            {
+                "name": "Nillsons special",
+                "ingredients": "Tomatsås, proteinpulver, 20kg vikt, proteinbar, gymkort",
+                "price": "2500 kr"
             }
         ]
     }

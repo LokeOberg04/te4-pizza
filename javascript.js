@@ -17,9 +17,24 @@ fetch('menu.json')
             easteregg()
         };
 
+        let deliciousText = document.getElementById("deliciousText")
+        let slogan = document.getElementById("slogan")
+
+        deliciousText.onclick = function () {
+            if (deliciousText.innerText == "Delicious") {
+                deliciousText.innerText = "Suspicious"
+                slogan.innerText = "Suspicious but Delicious"
+            } else {
+                deliciousText.innerText = "Delicious"
+                slogan.innerText = "Där hembakat möter fryst"
+            }
+        };
+
         function delay(time) {
             return new Promise(resolve => setTimeout(resolve, time));
         }
+
+
 
         async function easteregg() {
             EECounter++;
@@ -28,9 +43,21 @@ fetch('menu.json')
                 await delay(100)
                 easterEggButton.style.height = "1000px";
                 easterEggButton.style.width = "1900px";
-                await delay(100);
+                await delay(250);
                 easterEggButton.style.height = "3rem";
                 easterEggButton.style.width = "4rem";
+                easterEggButton.style.filter = "brightness(200%)"
+                easterEggButton.style.boxShadow = "12px 12px 40px 20px #ffffff"
+                iconChanger()
+            }
+        }
+
+        async function iconChanger() {
+            while (true) {
+                easterEggButton.src = "./images/italianboi.png"
+                await delay(1000);
+                easterEggButton.src = "./images/deliciousPizza.png"
+                await delay(1000);
             }
         }
 
