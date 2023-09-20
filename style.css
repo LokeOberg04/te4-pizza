@@ -131,7 +131,7 @@ nav {
     border-radius: 100px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10%;
+    transform: translateY(-3rem);
 }
 
 
