@@ -123,6 +123,17 @@ nav {
 
 }
 
+.scroller {
+    width: 3rem;
+    height: 1rem;
+    background-color: var(--color-secondary);
+    filter: opacity(50%);
+    border-radius: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
 
 .h1 {
     text-align: center;
