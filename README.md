@@ -22,3 +22,6 @@ https://www.figma.com/file/QVUdsPtOUlHhNK4UXzfed3/Pizza?type=design&node-id=0%3A
 
 ## Dokumentation
 
+sep 20
+
+jag gjorde saker

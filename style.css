@@ -239,6 +239,10 @@ hr {}
     padding-bottom: 4rem;
 }
 
+#alert {
+    background-image: url("./images/italianboi.png");
+}
+
 iframe {
     width: 80vw;
     height: 20rem;

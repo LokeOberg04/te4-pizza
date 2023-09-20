@@ -14,36 +14,42 @@
         rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/deliciousPizza.png" />
     <title>Delicious Pizza</title>
-
+    <meta name="google-site-verification" content="6oTGlg588Ksrpf0yxFKLi-2Bpo6Kh0f1aZKzHz_nAIk" />
 </head>
 
-<body>
+
+<body id="body">
     <nav>
-        <a href="#home"><img src="images/deliciousPizza.png" alt="vacker pizza" class="icon"></a>
-        <a href="#contact" class="contact">Kontakt</a>
-        <a href="#menu" class="menu">Meny</a>
+        <a aria-label="home" href="#home"><img src="images/deliciousPizza.png" alt="vacker pizza" class="icon"
+                id="vackerPizza"></a>
+        <a aria-label="contact" href="#contact" class="contact">Kontakt</a>
+        <a aria-label="menu" href="#menu" class="menu">Meny</a>
     </nav>
 
     <div class="background">
 
-        <p class="title1" id="home">Välkommen till <span style="color: rgb(231, 50, 50);">Delicious</span> <span
-                style="color: rgb(135, 135, 230);">Pizza</span></p>
-        <p class="title2">där hembakat möter fryst</p>
+        <p class="title1" id="home">Välkommen till <span style="color: rgb(231, 50, 50);"
+                id="deliciousText">Delicious</span> <span style="color: rgb(135, 135, 230);">Pizza</span></p>
+        <p class="title2" id="slogan">Där hembakat möter fryst</p>
         <p class="open">Öppettider</p>
         <p class="open">Mån-Fre 12:00-20:00</p>
         <p class="open">Lör-Sön 14:00-19:00</p>
         <p class="open" id="scroller"> <span style="font-size: medium;">+46 (0) 70 - 531 96 04</span></p>
 
     </div>
-    <a href="#scroller">
+    <a aria-label="scroller" href="#scroller">
         <div class="scroller"></div>
     </a>
     <h1 class="h1" id="menu">Meny</h1>
     <div id="menuButtons" class="menuContainer">
-        <a href="#ordinariePizzor"><button class="menuButton" id="ordinarie">Ordinarie</button></a>
-        <a href="#vegetariskaPizzor" "><button class=" menuButton" id="vegetarian">Vegetarian</button></a>
-        <a href="#inbakadePizzor"><button class="menuButton" id="inbakad">Inbakad</button></a>
-        <a href="#specialPizzor"><button class="menuButton" id="special">Specialare</button></a>
+        <a aria-label="ordinarie pizza" href="#ordinariePizzor"><button class="menuButton"
+                id="ordinarie">Ordinarie</button></a>
+        <a aria-label="vegetarisk pizza" href="#vegetariskaPizzor" "><button class=" menuButton"
+            id="vegetarian">Vegetarian</button></a>
+        <a aria-label="inbakad pizza" href="#inbakadePizzor"><button class="menuButton"
+                id="inbakad">Inbakad</button></a>
+        <a aria-label="special pizza" href="#specialPizzor"><button class="menuButton"
+                id="special">Specialare</button></a>
     </div>
     <ul id="pizzaList" class="menuItem">
         <h3 class="h1" id="ordinariePizzor">Ordinarie pizzor</h3>
@@ -350,23 +356,23 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade" style="display:block">
-                <img src="images/pizza.jpeg" style="width:100%">
+                <img src="images/pizza.jpeg" style="width:100%" alt="Pizza">
                 <div class="text">Pizza</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="images/Kockens familj.png" style="width:100%">
+                <img src="images/Kockens familj.png" style="width:100%" alt="Kockens familj">
                 <div class="text">Kockens familj</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="images/pizzaChef.jpg" style="width:100%">
+                <img src="images/pizzaChef.jpg" style="width:100%" alt="Pizza bagare">
                 <div class="text">Han gör pizza c:</div>
             </div>
 
             <!-- Next and previous buttons -->
-            <a class="prev" id="prev" hidden>&#10094;</a>
-            <a class="next" id="next" hidden>&#10095;</a>
+            <a aria-label="prev" class="prev" id="prev" hidden>&#10094;</a>
+            <a aria-label="next" class="next" id="next" hidden>&#10095;</a>
         </div>
         <br>
 
