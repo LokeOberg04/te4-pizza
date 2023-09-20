@@ -87,7 +87,7 @@ fetch('menu.json')
             menu[id].pizzor.forEach((pizza) => {
 
                 let pizzaItem = document.createElement("li")
-                let pizzaName = document.createElement("h5")
+                let pizzaName = document.createElement("p")
                 let div = document.createElement("div")
                 let pizzaText = document.createElement("p")
                 let pizzaPrice = document.createElement("p")
