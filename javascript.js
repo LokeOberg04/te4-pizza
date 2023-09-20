@@ -9,6 +9,31 @@ fetch('menu.json')
         document.getElementById("prev").hidden = false;
         document.getElementById("next").hidden = false;
 
+        let EECounter = 0;
+
+        let easterEggButton = document.getElementById("vackerPizza")
+
+        easterEggButton.onclick = function () {
+            easteregg()
+        };
+
+        function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+        }
+
+        async function easteregg() {
+            EECounter++;
+            if (EECounter == 5) {
+                easterEggButton.src = "./images/italianboi.png"
+                await delay(100)
+                easterEggButton.style.height = "1000px";
+                easterEggButton.style.width = "1900px";
+                await delay(100);
+                easterEggButton.style.height = "3rem";
+                easterEggButton.style.width = "4rem";
+            }
+        }
+
         let menuButtons = document.getElementById("menuButtons")
         let pizzaButton = document.getElementById("ordinarie")
         pizzaButton.classList.add("menuButton", "menuButtonFocus")
