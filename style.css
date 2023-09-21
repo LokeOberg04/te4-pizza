@@ -300,6 +300,10 @@ iframe {
     padding-top: 3rem;
 }
 
+.aboutP {
+    padding-top: 1rem;
+}
+
 /* Hide the images by default */
 .mySlides {
     display: none;

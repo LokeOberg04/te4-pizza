@@ -8,6 +8,8 @@ fetch('menu.json')
 
         document.getElementById("prev").hidden = false;
         document.getElementById("next").hidden = false;
+        document.getElementById("dots").hidden = false;
+        document.getElementById("aboutP").classList.remove("aboutP")
 
         let EECounter = 0;
 
