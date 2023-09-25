@@ -12,7 +12,7 @@ Målgrupp: Studenter
 
 Namn: Delicious Pizza
 
-Slogan: Delicious and suspicious
+Slogan: Där hembakat möter fryst
 
 Backend: Loke
 
@@ -20,8 +20,26 @@ Frontend: Alexander + Angelica
 
 https://www.figma.com/file/QVUdsPtOUlHhNK4UXzfed3/Pizza?type=design&node-id=0%3A1&mode=design&t=FpF4c9SVq9mPrCpJ-1
 
-## Dokumentation
+## Saker som kan förbättras
 
-sep 20
+- Bildstorlekar
 
-jag gjorde saker
+- Ta bort ejden
+
+- Marginaler (runt logga och mail/karta)
+
+## Saker som vi gjorde bra
+
+- Sidan funkar utan js
+
+- Konversion från skiss till produkt
+
+- Bra planering
+
+## Saker som vi gjorde dåligt
+
+- För mycket humor
+
+- Inkludera bilder i planering
+
+- Skriva bättre alt-taggar
